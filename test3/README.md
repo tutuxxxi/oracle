@@ -17,13 +17,13 @@
 
 1. 登陆system并给自己创建的用户（new_user_xxx）授权表空间
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_12-04-04.png" alt="Snipaste_2021-03-30_12-04-04" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_12-04-04.png" alt="Snipaste_2021-03-30_12-04-04" style="zoom:50%;" />
 
 
 
 2. 登陆自己创建的用户
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_11-42-13.png" alt="Snipaste_2021-03-30_11-42-13" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_11-42-13.png" alt="Snipaste_2021-03-30_11-42-13" style="zoom:50%;" />
 
 
 
@@ -45,7 +45,7 @@ begin
 end;
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_11-43-57.png" alt="Snipaste_2021-03-30_11-43-57" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_11-43-57.png" alt="Snipaste_2021-03-30_11-43-57" style="zoom:50%;" />
 
 
 
@@ -116,7 +116,7 @@ NOCOMPRESS
         NOCOMPRESS NO INMEMORY );
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_11-45-16.png" alt="Snipaste_2021-03-30_11-45-16" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_11-45-16.png" alt="Snipaste_2021-03-30_11-45-16" style="zoom:50%;" />
 
 
 
@@ -141,7 +141,7 @@ NOCOMPRESS NOPARALLEL
 PARTITION BY REFERENCE (order_details_fk1);
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_11-56-03.png" alt="Snipaste_2021-03-30_11-56-03" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_11-56-03.png" alt="Snipaste_2021-03-30_11-56-03" style="zoom:50%;" />
 
 
 
@@ -214,7 +214,7 @@ begin
 end;
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_12-06-01.png" alt="Snipaste_2021-03-30_12-06-01" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_12-06-01.png" alt="Snipaste_2021-03-30_12-06-01" style="zoom:50%;" />
 
 
 
@@ -233,7 +233,7 @@ a.ORDER_ID=b.order_id and
 a.order_date between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_12-08-35.png" alt="Snipaste_2021-03-30_12-08-35" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_12-08-35.png" alt="Snipaste_2021-03-30_12-08-35" style="zoom:50%;" />
 
 
 
@@ -247,7 +247,7 @@ FROM dba_data_files
 WHERE tablespace_name='USERS';
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_12-09-46.png" alt="Snipaste_2021-03-30_12-09-46" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_12-09-46.png" alt="Snipaste_2021-03-30_12-09-46" style="zoom:50%;" />
 
 ```sql
 SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
@@ -260,4 +260,4 @@ SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
  where  a.tablespace_name = b.tablespace_name;
 ```
 
-<img src="/Users/xxx_/Desktop/oracle/oracle/test3/Snipaste_2021-03-30_12-10-50.png" alt="Snipaste_2021-03-30_12-10-50" style="zoom:50%;" />
+<img src="./Snipaste_2021-03-30_12-10-50.png" alt="Snipaste_2021-03-30_12-10-50" style="zoom:50%;" />
